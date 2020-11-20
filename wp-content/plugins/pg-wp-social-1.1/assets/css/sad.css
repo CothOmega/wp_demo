@@ -1,0 +1,100 @@
+#fb_content {
+    margin: 0 auto;
+    font-size: 2rem;
+    max-width: 100rem;
+    position: relative;
+}
+
+#fb_content li {
+    margin: 0;
+    width: 46%;
+    margin-right: 8%;
+    vertical-align: top;
+    display: inline-block;
+}
+@media all and (max-width: 650px){
+    #fb_content li {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+#fb_content li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.fb_post.clearfix {
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: all ease .5s;
+}
+
+#fb_content .img_container {
+    /*min-height: 18rem;*/
+    height: 0;
+    padding-bottom: 52.5%;
+}
+
+.fb_body {
+    display: block;
+    position: relative;
+    margin-bottom: 1.4rem;
+    padding: 4px 5px;    
+    /*background-color: #ffffff;*/
+    text-align: left;
+    /*border: 1px solid #e5e3e3;*/
+    min-height: 16.5rem;
+}
+
+a.fb_date {
+    font-size: 14px;
+    padding-right: .8rem;
+    border-bottom: none;
+    color: #000;
+}
+
+.fbShareTxt {
+    color: #ffffff;
+    display: inline;
+    font-size: 1.4rem;
+}
+
+.fbShare {
+     display: none; 
+    background-color: #4867b4;
+    padding: 0 5px 7px 12px;
+    color: #ffffff;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    width: 8rem;
+}
+
+.fb_message {
+    /*min-height: 12.2rem;
+    max-height: 12.2rem;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-size: 18px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /*letter-spacing: 1px;*/
+    font-weight: 400;
+}
+
+#fb_content i.fab.fa-facebook-f {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 2.2rem;
+    padding: 6px 11px;
+    background-color: #fff;
+    color: #4867b4;
+}
+
+#fb_content .fbShare i.fab.fa-facebook {
+    font-size: 1.4rem;
+    padding-right: .4rem;
+}

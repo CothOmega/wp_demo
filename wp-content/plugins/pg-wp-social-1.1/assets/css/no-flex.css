@@ -1,0 +1,72 @@
+/* alternate stylesheet for facebook feed which doesn't use flexbox */
+#fb_content {
+    font-size: 0;
+    line-height: 0;
+}
+
+#fb_content ul, 
+#fb_content ul li {
+    margin-left: 0;
+}
+
+#fb_content ul li {
+    width: 32.333333333%;
+    margin: 0 .5%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 5%;
+}
+
+.fb_body {
+    font-size: 18px;
+}
+
+#fb_content .img_container {
+    width: 100%;
+    margin: .5%;
+    padding-top: 56.25%;
+}
+
+#fb_content .img_container:hover {
+    opacity: .7;
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+#fb_content .fb_message {
+    line-height: 24px;
+    overflow: hidden;
+    max-height: 72px;
+    transition: 200ms;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+}
+
+.fbShare {
+    display: none;
+}
+
+.fa.fa-facebook {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    background-color: white;
+    color: #4267B2;
+}
+
+@media only screen and (max-width: 750px) {
+    #fb_content ul li {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
